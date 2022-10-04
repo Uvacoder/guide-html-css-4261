@@ -1,0 +1,76 @@
+---
+---
+
+<details id="js-dropdown">
+  <summary role="button" aria-haspopup="true">
+    Click to open <span>▾</span>
+  </summary>
+  <p class="content">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita aliquid
+    modi quas autem non possimus, porro asperiores ab perspiciatis voluptatibus
+    rerum quisquam aspernatur velit tempore voluptates iure esse fugiat sint?
+  </p>
+</details>
+
+<button id="js-external-btn">external button</button>
+
+<style>
+  p {
+    padding: 2rem;
+    border-top: 3px solid var(--theme-divider);
+  }
+
+  summary {
+    appearance: none;
+    display: inline-flex;
+    background-color: hsl(220deg 100% 50%);
+    padding: 1ch 1.4ch;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #fff;
+  }
+
+  details span {
+    transition: rotate 180ms ease-in-out;
+  }
+
+  details[open] span {
+    rotate: 30deg;
+  }
+
+  details[open] > .content {
+    animation: fadeIn 200ms cubic-bezier(0, 0.55, 0.45, 1);
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+
+    100% {
+      opacity: unset;
+      transform: none;
+    }
+  }
+</style>
+
+<script>
+  const btn = document.getElementById("js-external-btn");
+  const dropdown = document.getElementById("js-dropdown");
+  let isDropDownOpen = false;
+
+  function toggleDropDown(isOpen) {
+    if (isOpen) {
+      dropdown.setAttribute("open", "");
+    } else {
+      dropdown.removeAttribute("open");
+    }
+  }
+
+  btn.addEventListener("click", () => {
+    isDropDownOpen = !isDropDownOpen;
+
+    toggleDropDown(isDropDownOpen);
+  });
+</script>
