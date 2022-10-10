@@ -48,9 +48,11 @@ export type Sidebar = Record<
 export const SIDEBAR: Sidebar = {
   en: {
     "Module 1": [
-      { text: "Overview", link: "en/introduction" },
-      { text: "Introduction to HTML", link: "en/page-2" },
-      { text: "File Management", link: "en/page-3" },
+      { text: "Overview", link: "en/overview" },
+      { text: "Introduction to HTML", link: "en/introduction-to-html" },
+      { text: "File Management", link: "en/file-management" },
+      { text: "Introduction to css", link: "en/intro-css" },
+      { text: "Fonts", link: "en/fonts" },
     ],
   },
 };
