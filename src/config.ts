@@ -47,7 +47,7 @@ export type Sidebar = Record<
 >;
 export const SIDEBAR: Sidebar = {
   en: {
-    "Module 1": [
+    "WebDev Notes": [
       { text: "Overview", link: "en/overview" },
       { text: "Introduction to HTML", link: "en/introduction-to-html" },
       { text: "File Management", link: "en/file-management" },
