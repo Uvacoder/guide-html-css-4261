@@ -1,6 +1,6 @@
 export const SITE = {
-  title: "HTML and CSS",
-  description: "HTML and CSS",
+  title: "WebDev Notes",
+  description: "WebDev Notes",
   defaultLanguage: "en_US",
 };
 
