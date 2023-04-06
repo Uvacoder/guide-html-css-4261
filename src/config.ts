@@ -55,6 +55,7 @@ export const SIDEBAR: Sidebar = {
       { text: "Fonts", link: "en/fonts" },
       { text: "Emoji Cheatsheet", link: "en/emoji-cheatsheet" },
       { text: "Markdown Cheatsheet", link: "en/markdown-cheatsheet" },
+      { text: "Public APIs", link: "en/public-apis" },
     ],
   },
 };
