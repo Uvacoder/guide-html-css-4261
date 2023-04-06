@@ -53,7 +53,7 @@ export const SIDEBAR: Sidebar = {
       { text: "File Management", link: "en/file-management" },
       { text: "Introduction to css", link: "en/intro-css" },
       { text: "Fonts", link: "en/fonts" },
-      { text: "Links", link: "en/links" },
+      { text: "Emoji Cheatsheet", link: "en/emoji-cheatsheet" },
     ],
   },
 };
