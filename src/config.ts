@@ -54,6 +54,7 @@ export const SIDEBAR: Sidebar = {
       { text: "Introduction to css", link: "en/intro-css" },
       { text: "Fonts", link: "en/fonts" },
       { text: "Emoji Cheatsheet", link: "en/emoji-cheatsheet" },
+      { text: "Markdown Cheatsheet", link: "en/markdown-cheatsheet" },
     ],
   },
 };
